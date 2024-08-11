@@ -2,33 +2,40 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  font-family: Roboto;
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 90px 120px 1fr;
 }
 
+p {
+  padding: 0;
+  margin: 0;
+}
+
 .sidebar {
   grid-row: 1/4;
   grid-column: 1/2;
-  background-color: aqua;
+  background-color: #0ea5e9;
+  color: white;
 }
 
 .searchbar {
   grid-row: 1/2;
   grid-column: 2/3;
-  background-color: aquamarine;
+  background-color: white;
 }
 
 .greetingbar {
   grid-row: 2/3;
   grid-column: 2/3;
-  background-color: antiquewhite;
+  background-color: white;
 }
 
 .content-container {
   grid-row: 3/4;
   grid-column: 2/3;
-  background-color: azure;
+  background-color: #e2e8f0;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 80px 8fr;
@@ -50,18 +57,15 @@ body {
 .project-container {
   grid-row: 2/3;
   grid-column: 1/2;
-  background-color: lightgray;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 30px;
-  padding: 30px;
   padding-top: 0px;
 }
 
 .info-container {
   grid-row: 2/3;
   grid-column: 2/3;
-  background-color: lightskyblue;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 45% 55%;
@@ -72,10 +76,65 @@ body {
   height: min(300px, 100%);
   border: 1px solid black;
   border-radius: 5px;
+  background: repeating-linear-gradient(
+    90deg,
+    #fcd34d 0%,
+    #fcd34d 2%,
+    white 2%,
+    white 100%
+  );
 }
 
 .trending {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
+  background-color: white;
+}
+
+.announcements {
+  background-color: white;
+}
+
+.profilePic img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+
+div.sidebar div.dashboard-content img {
+  height: 20px;
+}
+
+div.dashboard-title img {
+  height: 35px;
+}
+
+.dashboard-title {
+  font-size: 1.3em;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.dashboard-content div {
+  font-size: 1.1em;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.extra-margin {
+  margin-top: 50px;
 }
