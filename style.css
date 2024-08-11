@@ -5,7 +5,7 @@ body {
   font-family: Roboto;
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 90px 120px 1fr;
+  grid-template-rows: 90px 100px 1fr;
 }
 
 p {
@@ -34,6 +34,12 @@ p {
   grid-row: 2/3;
   grid-column: 2/3;
   background-color: white;
+  padding: 0px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0 4px 2px -1px #4f4f4f33;
 }
 
 .content-container {
@@ -42,7 +48,7 @@ p {
   background-color: #e2e8f0;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 80px 8fr;
+  grid-template-rows: 50px 8fr;
   gap: 20px;
   padding: 20px;
 }
@@ -232,4 +238,40 @@ div.notifications {
   border: none;
   border-radius: 8px;
   height: 20px;
+}
+
+.greetingbar-left img {
+  height: 50px;
+  border-radius: 50px;
+}
+
+.greetingbar-left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.greetingbar-left-text p:first-child {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.greetingbar-left-text p:last-child {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.greetingbar-right {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.greetingbar-right button {
+  padding: 10px 20px;
+  background-color: #0ea5e9;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
 }
